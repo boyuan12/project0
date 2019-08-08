@@ -2,8 +2,55 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <style>
+                margin: 0;
+                padding: 0;
+                font-family: cursive;
+            }
+            
+            .nav {
+                background-color: #595959;
+                color: white;
+                list-style: none;
+                text-align: center;
+                padding: 20px 0 20px 0;
+            }
+            
+            .nav > li {
+                display: inline-block;
+                padding-right: 50px;
+            }
+            
+            .nav > li > a {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .nav:hover {
+                background-image: url("https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80");
+            }
+        </style>
     </head>
     <body>
-        Hello, world! Hello Again
+        <div class="navbar">
+            <nav>
+                <ul class="nav">
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">Example</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <p>Send Email</p>
+            <form class="contact-form" action="contactform.php" method="post">
+                <input type="text" name="name" placeholder="Full name">
+                <input type="email" name="email" placeholder="email">
+                <input type="text" name="subject" placeholder="subject">
+                <textarea name="message" placeholder="Message">
+                </textarea>
+                <button type="submit" name="submit">Send Mail</button>
+            </form>
+        </main>
     </body>
 </html>
